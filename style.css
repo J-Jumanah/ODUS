@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Amiri", serif;
+  /* transition: all 0.4s ease-out; */
+}
+.container {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  /* margin-top: 20px; */
+  height: 500px;
+  width: 80%;
+  /* padding: 25px; */
+  border-radius: 10px;
+  /* background-image: linear-gradient(130deg, #94d867, #2a6601 60%); */
+  background: linear-gradient(120deg, #94d867 50%, #2a6601 50%);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.445);
+}
+.row {
+  display: flex;
+}
+.col-1 {
+  flex-basis: 50%;
+  /* display: flex; */
+  display: block;
+}
+.col-2 {
+  flex-basis: 50%;
+  display: inline;
+}
+/* 
+** Col-2
+*/
+.col-2 .text {
+  display: inline;
+  color: white;
+}
+.col-2 .text h1 {
+  margin: 12% 0 0 55%;
+  font-size: 30px;
+}
+.col-2 .text h2 {
+  margin: 1% 0 0 30%;
+  font-size: 25px;
+}
+.col-2 .myForm {
+  margin: 6% 0 0 25%;
+}
+.myForm input[name="username"],
+input[name="password"] {
+  width: 270px;
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  text-align: right;
+}
+.myForm .details {
+  margin-top: 10px;
+}
+.myForm .remember {
+  margin-left: 260px;
+  color: white;
+  font-size: 15px;
+  accent-color: #94d867;
+}
+.myForm .forgotPass {
+  float: left;
+  margin-left: 15px;
+  font-size: 15px;
+}
+.myForm .forgotPass a {
+  color: white;
+  text-decoration: none;
+}
+.myForm .login {
+  width: 300px;
+  margin-top: 20px;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 18px;
+  background: #94d867;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+.myForm .login:hover {
+  background: #ffffff;
+}
+/* 
+** Col-1
+*/
+.col-1 img {
+  height: 220px;
+  width: auto;
+  margin: 6% 0 0 26%;
+  /* -webkit-filter: drop-shadow(5px 5px 5px #666666); */
+  filter: drop-shadow(5px 5px 100px #00000060);
+}
+.col-1 .text {
+  text-align: right;
+  margin-top: 22px;
+  margin-right: 85px;
+  text-align: center;
+}
+.col-1 .text h4 {
+  color: white;
+  font-size: 20px;
+  text-shadow: -2px 2px 2px gray;
+}
+.col-1 .text p {
+  color: #1c4202;
+  font-size: 17px;
+  padding-top: 5px;
+}
